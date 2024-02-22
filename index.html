@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var main=document.createElement("div")
+        document.body.appendChild(main)
+        main.style.border="2px solid black"
+        main.style.width="600px"
+        main.style.height="700px"
+        main.style.marginLeft="500px"
+        main.style.borderRadius="30px"
+        main.style.backgroundColor="black"
+
+        var head=document.createElement("h1")
+        main.appendChild(head)
+        head.innerText="Image Rotation"
+        head.style.textAlign="center"
+        head.style.color="white"
+
+        var image=document.createElement("img")
+        main.appendChild(image)
+        image.setAttribute("src","rose.jpg")
+        image.style.width="500px"
+        image.style.marginLeft="50px"
+        
+        
+        var bk=document.createElement("br")
+        main.appendChild(bk)
+        
+        var bk=document.createElement("br")
+        main.appendChild(bk)
+
+        var bk=document.createElement("br")
+        main.appendChild(bk)
+
+        var bk=document.createElement("br")
+        main.appendChild(bk)
+
+        var bk=document.createElement("br")
+        main.appendChild(bk)
+
+        var bk=document.createElement("br")
+        main.appendChild(bk)
+
+        var button1=document.createElement("button")
+        main.appendChild(button1)
+        button1.innerText="Rotate Image"
+        button1.style.fontSize="20px"
+        button1.style.padding="10px"
+        button1.style.marginLeft="120px"
+        button1.style.backgroundColor="grey"
+        button1.style.borderRadius="30px"
+
+
+        var button2=document.createElement("button")
+        main.appendChild(button2)
+        button2.innerText="orginal Image"
+        button2.style.fontSize="20px"
+        button2.style.padding="10px"
+        button2.style.marginLeft="50px"
+        button2.style.backgroundColor="skyblue"
+        button2.style.borderRadius="30px"
+
+        button1.addEventListener('click',function(){
+            image.style.transform='rotate(180deg)';
+        })
+
+        button2.addEventListener('click',function(){
+            image.style.transform='rotate(0deg)';
+        })
+
+
+    </script>
+</body>
+</html>
